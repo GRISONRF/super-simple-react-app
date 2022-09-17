@@ -22,20 +22,12 @@ function App() {
     })
   }, [])
 
-
-  if (url) {
-    return (
-      <div>
-        <h1>Every time you refresh the page you will see a different first name, last name, email  and picture.</h1>
-        <h2>{firstName} {lastName}</h2>
-        <h2>{email}</h2>
-        <img alt='picture' src={pic}></img>
-      </div>
-    );
-  }
-
   return (
     <div>
+      <h1>Every time you refresh the page you will see a different first name, last name, email  and picture.</h1>
+      <h2>{firstName} {lastName}</h2>
+      <h2>{email}</h2>
+      <img alt='picture of someone' src={pic}></img>
     </div>
   );
 }
